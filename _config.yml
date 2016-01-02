@@ -2,7 +2,7 @@
 title: Milanka Bunard
 email: milankaart@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Visual; artist
+  Visual artist
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://milankabunard.github.io.com" # the base hostname & protocol for your site
 twitter_username: milankabunard
