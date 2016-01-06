@@ -4,8 +4,4 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
-
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
-
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+MILANKA BUNARD is a multidisciplinary contemporary artist living and working in Vancouver, Canada. She has been widely exhibited internationally. Her artwork can be found in public and private collections in New York, Chicago, Sao Paolo, Barcelona. Milanka is exploring two dimensional and three dimensional world through the use of different media trying to build the bridge between painting and sculpture. Her latest interest is the play between paper and thread.
