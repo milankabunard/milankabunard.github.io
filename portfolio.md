@@ -1,6 +1,7 @@
+Portfolio
 
-## Photography
+### Photography
 
-## Work on Paper
+### Work on Paper
 
-## Paintings
+### Paintings
