@@ -208,8 +208,6 @@ permalink: /exhibitions/
 
 ---
 
-![TROY](/troy.jpg)
-
 |**TROYART**|
 |---|
 |**International Exhibition at MuBE** -- Museu Brasileiro da Escultura, January 15-30, 2011|
@@ -226,10 +224,9 @@ permalink: /exhibitions/
 
 ---
 
-![EXITART](/exitart.jpg)
-
-|**FRACKING: Art and Activism Against the Drill**|
+|**EXIT ART**|
 |---|
+|**FRACKING: Art and Activism Against the Drill**|
 |475 Tenth Ave|
 |New York, NY 10018|
 |December 7, 2010 to March 26, 2011|
@@ -263,9 +260,7 @@ permalink: /exhibitions/
 
 ---
 
-![ARTROPOLIS](http://sim-publishing.com/bca/bca-0013.jpg)
-
-|**ARTROPOLIS 2003 - THE BIG PICTURE**|
+|**ARTROPOLIS 2003 - THE BIG PICTURE (PERSPECIVES ON CHANGE)**|
 |---|
 ||
 |Exhibition May 16 - June 8 2003 at CBC Vancouver, Canada|
