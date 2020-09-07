@@ -1,8 +1,10 @@
 ---
 layout: page
-title: Selected Exhibitions
+title: 
 permalink: /exhibitions/
 ---
+
+**Selected Exhibitions**
 
 |**ABAD**|
 |----|
