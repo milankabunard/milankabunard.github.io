@@ -210,7 +210,7 @@ permalink: /exhibitions/
 
 ![TROY](/troy.jpg)
 
-|**TROYART**}
+|**TROYART**|
 |---|
 |**International Exhibition at MuBE** -- Museu Brasileiro da Escultura, January 15-30, 2011|
 |Museu Brasileiro da Escultura Rua Alemanha, 221, Jd. Europa São Paulo - SP - Brasil CEP 01448-010|
