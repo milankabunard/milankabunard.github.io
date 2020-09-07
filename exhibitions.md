@@ -46,5 +46,110 @@ permalink: /exhibitions/
 
 ---
 
+|**POSTCARDS FROM THE EDGE**|
+|---}
+|January 30 - February 1, 2015|
+|Visual Aids, Benefit sale at Luhring Augustine|
+|531 W. 24th Street|
+|New York|
+
+---
+
+|**MUSEO INTERACTIVO DE HISTORIA DE LUGO, España**|
+|---|
+||
+|DECEMBER 22, 2014 - FEBRUARY 22, 2015|
+||
+|Comisaria / Curator: Katia Muñoz|
+
+---
+
+|**Mobius, Inc.**|
+|---|
+|55 Norfolk St, Cambridge, Massachusetts|
+|UNDER THE INFLUENCE OF FLUXUS|
+|4-11 June 2014|
+
+---
+
+|**The Incubator**|
+|---|
+|May 5 - 11 2014|
+|585 East Broadway, Vancouver, Canada|
+
+---
+
+|**Fluxjob**|
+|---|
+|February 7 - July 6, 2014|
+|MCBA Star Tribune Foundation Gallery, Minneapolis, MN|
+
+---
+
+|**FLUXBOX Exhibition** - Curated by Keith A. Buchholz At Joan Flasch Artistbook|
+|Library Art Institute of Chicago  Feb.20th - March 13th 2014|
+
+---
+
+**Visual Aids**, Benefit sale at Luhring Augustine , Jan. 25th 2014, 531 W 24th Street, NYC
+
+---
+
+|**ABAD Australia**|
+|---|
+|Tweed River Art Gallery|
+|New South Wales|
+|Australia|
+||
+|18 October - 24 November 2013|
+|Curated by Heather & Matthew Julie Baratt|
+
+---
+
+|**Postcards From The Edge**|
+|---|
+|Benefit sale at|
+|Sikkema Jenkins & Co.|
+|530 West 22nd New York, NY|
+|Jan 25, 2013|
+
+---
+
+|**Pandora's Box @MUBE**|
+|---|
+|Museu Brasileiro de Escultura,|
+|Rua Alemanha 221,|
+|Sao Paolo - SP - Brasil|
+|Dec 6 - 30, 2012|
+
+---
+
+|**Benefit for Visual AIDS**|
+|---|
+|Hosted at Cheim & Read, 547 W 25th Street, NY, NY|
+|January 6 - 8, 2012|
+
+---
+
+|Friday at 6:00pm - December 10 at 2:00am|
+|---|
+|Location: **QUETZALCOATL GALLERY3209 BEACON AVE S**, Seattle,WA|
+|November 11 - December 10, 2011|
+
+---
+
+|**THE TIES THAT BIND**|
+|---|
+|Artist reception: Saturday, August 13, 2011|
+|Exhibition: July 31 to September 2, 2011|
+|The Second Avenue Firehouse Gallery|
+|Bay Shore, New York|
+
+---
+
+
+
+
+
 
 
