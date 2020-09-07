@@ -261,6 +261,15 @@ permalink: /exhibitions/
 |537 Broadway - 2nd Floor|
 |New York, NY|
 
+---
+
+![ARTROPOLIS](http://sim-publishing.com/bca/bca-0013.jpg)
+
+|**ARTROPOLIS 2003 - THE BIG PICTURE**|
+|---|
+||
+|Exhibition May 16 - June 8 2003 at CBC Vancouver, Canada|
+
 
 
 
