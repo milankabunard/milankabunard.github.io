@@ -33,6 +33,8 @@ permalink: /exhibitions/
 
 ---
 
+![AIR](/air.jpg)
+
 |**GALLERY III**|
 |---|
 ||
