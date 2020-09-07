@@ -1,7 +1,7 @@
-Portfolio
+## Portfolio
 
-### Photography
+### <a href="/photography">Photography</a>
 
-### Work on Paper
+### <a href="/paper">Work on Paper</a>
 
-### Paintings
+### <a href="/paintings">Paintings</a>
