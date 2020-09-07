@@ -210,10 +210,56 @@ permalink: /exhibitions/
 
 ![TROY](/troy.jpg)
 
-
-|**International Exhibition at MuBE** -- Museu Brasileiro da Escultura, January 15-30, 2011|
+|**TROYART**}
 |---|
+|**International Exhibition at MuBE** -- Museu Brasileiro da Escultura, January 15-30, 2011|
 |Museu Brasileiro da Escultura Rua Alemanha, 221, Jd. Europa São Paulo - SP - Brasil CEP 01448-010|
+
+---
+
+|**PACT 19: DROP**|
+|---|
+|January 8, 2011|
+|Artist Run Centre|
+|221 E. Georgia street|
+|Vancouver, BC. Canada|
+
+---
+
+![EXITART](/exitart.jpg)
+
+|**FRACKING: Art and Activism Against the Drill**|
+|---|
+|475 Tenth Ave|
+|New York, NY 10018|
+|December 7, 2010 to March 26, 2011|
+
+---
+
+|**RAY JOHNSON AND A BOOK ABOUT DEATH**|
+|---|
+|November 3, 2010|
+|Sal Gallery|
+|Brookville, NY|
+
+---
+
+|**FLUX MUSEUM ABAD 2010**|
+|---|
+|October 8 - 30, 2010|
+|6955 Pinon Street|
+|Forth Worth|
+|Texas 76116|
+
+----
+
+|**A BOOK ABOUT DEATH**|
+|---|
+|September 10 - 22, 2009|
+||
+|Emily Harvey Foundation Gallery|
+|537 Broadway - 2nd Floor|
+|New York, NY|
 
 
 
