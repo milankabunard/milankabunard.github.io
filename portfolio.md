@@ -1,5 +1,5 @@
-H1 Photography
+# Photography
 <br />
-H1 Work on Paper
+# Work on Paper
 <br />
-H1 Paintings
+# Paintings
