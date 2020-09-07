@@ -6,6 +6,8 @@ permalink: /exhibitions/
 
 **Selected Exhibitions**
 
+
+
 |**ABAD**|
 |----|
 |THE LAST WALTZ|
@@ -26,5 +28,14 @@ permalink: /exhibitions/
 |curated by Eiichi Matsuhashi (29th April to 22nd Sept, 2016)|
 
 ---
+
+|**POSTCARDS FROM THE EDGE 2016**|
+|----|
+|Hosted by: Sikkema Jenkins & Co.|
+|Preview Party: Friday, January 29, 6-8 PM|
+|Benefit Sale: January 30-31, 2016|
+
+---
+
 
 
