@@ -4,10 +4,6 @@ title:
 permalink: /exhibitions/
 ---
 
-**Selected Exhibitions**
-
-
-
 |**ABAD**|
 |----|
 |THE LAST WALTZ|
@@ -34,6 +30,17 @@ permalink: /exhibitions/
 |Hosted by: Sikkema Jenkins & Co.|
 |Preview Party: Friday, January 29, 6-8 PM|
 |Benefit Sale: January 30-31, 2016|
+
+---
+
+|**GALLERY III**|
+|---|
+||
+|Wish You Were Here 14|
+|July 1 – July 26, 2015|
+||
+|Special Opening Preview Reception: June 22nd, 6-8 pm|
+|111 Front Street • #228 • Brooklyn, NY 11201|
 
 ---
 
