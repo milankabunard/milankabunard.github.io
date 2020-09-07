@@ -147,13 +147,13 @@ permalink: /exhibitions/
 
 ---
 
-|![AIR](/twigs.gif)|221A Artist Run Centre Presents:|
+|![TWIGS](/twigs.gif)|221A Artist Run Centre Presents:|
 |---|---|
-|||PACT 21: TWIGS PAPER FOAM|
-|||AT EMILY CARR UNIVERSITY|
-|||1399 Johnston StreetVancouver, BC, Canada|
-||||
-|RECEPTION: JUNE 25, 2011, 6:00 PM|
+||PACT 21: TWIGS PAPER FOAM|
+||AT EMILY CARR UNIVERSITY|
+||1399 Johnston StreetVancouver, BC, Canada|
+|||
+|RECEPTION: JUNE 25, 2011, 6:00 PM||
 
 ---
 
