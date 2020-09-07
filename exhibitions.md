@@ -189,6 +189,7 @@ permalink: /exhibitions/
 
 ---
 
+![AIR](/vanabbemuseum.gif)
 
 |**Exhibition: February 20 - March 11, 2011**|
 |---|
