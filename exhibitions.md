@@ -17,6 +17,7 @@ permalink: /exhibitions/
 ---
 
 |**Karuizawa New Art Museum**|
+|----|
 |1151-1, Karuizawa, Karuizawa-machi,| 
 |Kitasaku-gun, Nagano, 389-0102 Japan|
 ||
