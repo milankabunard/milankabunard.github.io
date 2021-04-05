@@ -5,6 +5,7 @@ permalink: /exhibitions/
 ---
 
 |**Centre Culturel Canadian, Paris**|
+|----|
 |130, rue Faubourg Saint-Honoré|
 |75008 Paris|
 |Walking Meditaiton, May 2020|
