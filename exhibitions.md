@@ -4,6 +4,14 @@ title:
 permalink: /exhibitions/
 ---
 
+|**Centre Culturel Canadian, Paris**|
+|130, rue Faubourg Saint-Honoré|
+|75008 Paris|
+|Walking Meditaiton, May 2020|
+|SEPTEMBER 17 - OCTOBER 16, 2020|
+
+---
+
 |**ABAD**|
 |----|
 |THE LAST WALTZ|
