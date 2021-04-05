@@ -10,7 +10,8 @@ permalink: /exhibitions/
 |75008 Paris|
 ||
 |_Image…envoyée/Image…sent_|
-|An exhibition produced for the 50th anniversary of the Canadian Cultural Centre in Paris. |
+|An exhibition produced for the 50th anniversary of the Canadian Cultural Centre in Paris.|
+||
 |Walking Meditaiton, May 2020|
 |SEPTEMBER 17 - OCTOBER 16, 2020|
 
