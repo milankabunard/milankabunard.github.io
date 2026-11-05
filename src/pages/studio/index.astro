@@ -1,0 +1,78 @@
+---
+import Studio from '../../layouts/Studio.astro';
+import { allWorks, thumb, full, label } from '../../lib/works.js';
+import { artist, statement, exhibitions } from '../../data/site.js';
+
+const featured = allWorks[3];
+const recent = allWorks.filter((w) => w !== featured).slice(0, 8);
+---
+<Studio image={full(featured)}>
+  <section class="hero">
+    <a class="hero-image" href={`/studio/work/${featured.id}/`}>
+      <img src={full(featured)} alt={featured.alt} width={featured.width} height={featured.height} fetchpriority="high" />
+    </a>
+    <div class="hero-text">
+      <p class="eyebrow">{artist.tagline}</p>
+      <h1>Paintings, works on paper and thread</h1>
+      <p class="lede">{statement.split('. ')[0]}.</p>
+      <a class="button" href="/studio/work/">View the work</a>
+      <p class="caption">Shown: <a href={`/studio/work/${featured.id}/`}>{label(featured)}</a></p>
+    </div>
+  </section>
+
+  <section class="recent">
+    <div class="section-head">
+      <h2>Recent work</h2>
+      <a class="text-link" href="/studio/work/">All work</a>
+    </div>
+    <ul class="grid">
+      {recent.map((w) => (
+        <li>
+          <a href={`/studio/work/${w.id}/`}>
+            <img src={thumb(w)} alt={w.alt} loading="lazy" width={w.width} height={w.height} style={`background:${w.color}`} />
+            <span>{label(w)}</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="shows">
+    <div class="section-head">
+      <h2>Selected exhibitions</h2>
+      <a class="text-link" href="/studio/about/#exhibitions">Full list</a>
+    </div>
+    <ul>
+      {exhibitions.slice(0, 3).map((e) => (
+        <li><span class="year">{e.year}</span><span><strong>{e.title}</strong><br />{e.venue}, {e.place}</span></li>
+      ))}
+    </ul>
+  </section>
+</Studio>
+
+<style>
+  .hero {
+    display: grid; gap: 32px; align-items: end;
+    grid-template-columns: minmax(0, 7fr) minmax(0, 4fr);
+    padding-top: 16px;
+  }
+  .hero-image img { width: 100%; height: auto; max-height: 82vh; object-fit: contain; object-position: left bottom; }
+  .hero-text h1 { font-size: clamp(32px, 4vw, 52px); margin: 12px 0 20px; }
+  .lede { font: 300 20px/1.45 var(--serif); margin: 0 0 28px; max-width: 32ch; }
+  .caption { margin-top: 32px; font-size: 13px; color: var(--muted); }
+  @media (max-width: 760px) { .hero { grid-template-columns: 1fr; } }
+
+  .section-head { display: flex; justify-content: space-between; align-items: baseline; margin: 112px 0 28px; }
+  .section-head h2 { font-size: 30px; }
+
+  .grid { list-style: none; padding: 0; margin: 0; display: grid; gap: 40px 24px; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+  .grid a { text-decoration: none; }
+  .grid img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; transition: opacity 0.2s; }
+  .grid a:hover img { opacity: 0.85; }
+  .grid span { display: block; margin-top: 10px; font-size: 13px; color: var(--muted); }
+
+  .shows ul { list-style: none; padding: 0; margin: 0; border-top: 1px solid var(--line); }
+  .shows li { display: grid; grid-template-columns: 80px 1fr; padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 15px; }
+  .shows .year { color: var(--muted); }
+  .shows strong { font-weight: 500; }
+</style>

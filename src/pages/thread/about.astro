@@ -1,0 +1,72 @@
+---
+import Thread from '../../layouts/Thread.astro';
+import { artist, bio, statement, collections, exhibitions } from '../../data/site.js';
+---
+<Thread title="About" description={bio[0]}>
+  <main>
+    <p class="statement" id="statement">{statement}</p>
+    <hr class="stitch-rule" />
+
+    <section class="sheet">
+      <h1>About</h1>
+      {bio.map((p) => <p>{p}</p>)}
+      <p class="muted">Collections: {collections.join(' · ')}</p>
+    </section>
+
+    <section id="exhibitions">
+      <h2>Exhibitions</h2>
+      <ul class="tags">
+        {exhibitions.map((e, i) => (
+          <li style={`--r:${((i * 37) % 7) - 3}deg`}>
+            <span class="year">{e.year}</span>
+            <strong>{e.title}</strong>
+            <span>{e.venue}</span>
+            <span class="muted">{e.place}</span>
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <section class="sheet" id="contact">
+      <h2>Write to the studio</h2>
+      <p>Private viewings, studio visits, available work.</p>
+      <!-- Placeholder: wire to Formspree (or similar) before launch. -->
+      <form action="#" method="post">
+        <label>name <input name="name" autocomplete="name" required /></label>
+        <label>email <input name="email" type="email" autocomplete="email" required /></label>
+        <label>work <input name="work" id="work-field" /></label>
+        <label>message <textarea name="message" rows="5" required></textarea></label>
+        <button type="submit">send</button>
+      </form>
+      <p class="muted"><a href={artist.instagram}>Instagram</a> · <a href={artist.cultureCrawl}>Eastside Culture Crawl</a></p>
+    </section>
+  </main>
+  <script>
+    const work = new URLSearchParams(location.search).get('work');
+    const field = document.getElementById('work-field') as HTMLInputElement | null;
+    if (work && field) field.value = work;
+  </script>
+</Thread>
+
+<style>
+  main { padding: 120px var(--gutter) 140px; max-width: 900px; margin: 0 auto; }
+  .statement { font: 300 italic clamp(26px, 3.6vw, 40px)/1.4 var(--serif); margin: 0; }
+  h1, h2 { font: 500 12px var(--mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--thread); margin: 0 0 20px; }
+  section { margin-top: 72px; scroll-margin-top: 80px; }
+  .sheet { background: var(--card); padding: clamp(20px, 4vw, 40px); box-shadow: 0 1px 1px rgb(60 40 20 / 0.12), 0 16px 32px -14px rgb(60 40 20 / 0.35); max-width: 640px; }
+  .sheet p { font-size: 14px; }
+  .muted { color: var(--muted); }
+
+  .tags { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 20px; }
+  .tags li { background: var(--card); padding: 22px 16px 16px; display: grid; gap: 2px; font-size: 12px; transform: rotate(var(--r)); box-shadow: 0 1px 1px rgb(60 40 20 / 0.12), 0 8px 16px -8px rgb(60 40 20 / 0.35); position: relative; }
+  .tags li::before { content: ''; position: absolute; top: 8px; left: 50%; width: 8px; height: 8px; margin-left: -4px; border-radius: 50%; border: 1px solid var(--muted); }
+  .tags strong { font-weight: 500; font-size: 13px; }
+  .tags .year { color: var(--thread); }
+
+  form { display: grid; gap: 14px; margin: 20px 0; }
+  label { display: grid; gap: 4px; font-size: 11px; color: var(--muted); }
+  input, textarea { font: 14px var(--mono); color: var(--ink); background: transparent; border: 0; border-bottom: 1px dashed var(--muted); padding: 6px 0; }
+  textarea { border: 1px dashed var(--muted); padding: 8px; }
+  input:focus, textarea:focus { outline: none; border-color: var(--thread); }
+  button { justify-self: start; font: 500 12px var(--mono); background: var(--thread); color: #fff; border: 0; padding: 10px 16px; cursor: pointer; }
+</style>

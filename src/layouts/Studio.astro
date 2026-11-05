@@ -1,0 +1,85 @@
+---
+import Switcher from '../components/Switcher.astro';
+import { artist } from '../data/site.js';
+const { title, description = artist.tagline, image } = Astro.props;
+const fullTitle = title ? `${title} · ${artist.name}` : `${artist.name} · ${artist.tagline}`;
+const path = Astro.url.pathname;
+const current = (p) => (path.startsWith(p) ? 'page' : undefined);
+---
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{fullTitle}</title>
+  <meta name="description" content={description} />
+  <meta property="og:title" content={fullTitle} />
+  <meta property="og:description" content={description} />
+  {image && <meta property="og:image" content={new URL(image, Astro.site)} />}
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <slot name="head" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="name" href="/studio/">{artist.name}</a>
+    <nav aria-label="Main">
+      <a href="/studio/work/" aria-current={current('/studio/work')}>Work</a>
+      <a href="/studio/about/" aria-current={current('/studio/about')}>About</a>
+      <a href="/studio/about/#contact">Contact</a>
+      <a href={artist.instagram}>Instagram</a>
+    </nav>
+  </header>
+  <main><slot /></main>
+  <footer class="site-footer">
+    <span>© {new Date().getFullYear()} {artist.name}</span>
+    <span>Vancouver, Canada</span>
+  </footer>
+  <Switcher current="studio" />
+</body>
+</html>
+
+<style is:global>
+  :root {
+    --bg: #f6f4f0;
+    --ink: #1d1c1a;
+    --muted: #6e6a63;
+    --line: #e0dbd2;
+    --accent: #8a2a33;
+    --serif: 'Fraunces', Georgia, serif;
+    --sans: 'Inter', system-ui, sans-serif;
+    --gutter: clamp(16px, 4vw, 48px);
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 400 16px/1.6 var(--sans); }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
+  h1, h2, h3 { font-family: var(--serif); font-weight: 300; line-height: 1.15; margin: 0; }
+  main { padding: 0 var(--gutter); }
+
+  .site-header {
+    position: sticky; top: 0; z-index: 10;
+    display: flex; flex-wrap: wrap; gap: 8px 32px; justify-content: space-between; align-items: baseline;
+    padding: 20px var(--gutter);
+    background: color-mix(in srgb, var(--bg) 92%, transparent);
+    backdrop-filter: blur(8px);
+  }
+  .site-header .name { font: 400 22px/1 var(--serif); text-decoration: none; }
+  .site-header nav { display: flex; gap: 24px; font-size: 14px; }
+  .site-header nav a { text-decoration: none; color: var(--muted); }
+  .site-header nav a:hover, .site-header nav a[aria-current] { color: var(--ink); }
+
+  .site-footer {
+    display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px;
+    margin-top: 96px; padding: 24px var(--gutter) 80px;
+    border-top: 1px solid var(--line); color: var(--muted); font-size: 13px;
+  }
+
+  .eyebrow { font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+  .button {
+    display: inline-block; padding: 12px 20px; border: 1px solid var(--ink);
+    text-decoration: none; font-size: 14px; transition: background 0.15s, color 0.15s;
+  }
+  .button:hover { background: var(--ink); color: var(--bg); }
+  .text-link { color: var(--accent); text-underline-offset: 3px; }
+</style>

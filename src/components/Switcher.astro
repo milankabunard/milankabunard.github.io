@@ -1,0 +1,20 @@
+---
+// Review-only control for comparing the two directions. Remove before launch.
+const { current } = Astro.props;
+---
+<nav class="switcher" aria-label="Design direction">
+  <a href="/studio/" aria-current={current === 'studio' ? 'page' : undefined}>A · Studio</a>
+  <a href="/thread/" aria-current={current === 'thread' ? 'page' : undefined}>B · Thread</a>
+</nav>
+
+<style>
+  .switcher {
+    position: fixed; left: 16px; bottom: 16px; z-index: 100;
+    display: flex; gap: 2px; padding: 3px;
+    background: #111; border-radius: 999px;
+    font: 500 12px/1 system-ui, sans-serif;
+    box-shadow: 0 4px 16px rgb(0 0 0 / 0.25);
+  }
+  a { color: #bbb; text-decoration: none; padding: 8px 12px; border-radius: 999px; }
+  a[aria-current] { background: #fff; color: #111; }
+</style>

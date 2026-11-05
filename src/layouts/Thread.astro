@@ -1,0 +1,74 @@
+---
+import Switcher from '../components/Switcher.astro';
+import { artist } from '../data/site.js';
+const { title, description = artist.tagline, image } = Astro.props;
+const fullTitle = title ? `${title} · ${artist.name}` : artist.name;
+---
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{fullTitle}</title>
+  <meta name="description" content={description} />
+  <meta property="og:title" content={fullTitle} />
+  <meta property="og:description" content={description} />
+  {image && <meta property="og:image" content={new URL(image, Astro.site)} />}
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Serif:ital,wght@0,300;1,300&display=swap" rel="stylesheet" />
+  <slot name="head" />
+</head>
+<body>
+  <header class="tag-bar">
+    <a class="name" href="/thread/">{artist.name}</a>
+    <nav aria-label="Main">
+      <slot name="nav" />
+      <a href="/thread/about/">About</a>
+      <a href={artist.instagram}>Instagram</a>
+    </nav>
+  </header>
+  <slot />
+  <Switcher current="thread" />
+</body>
+</html>
+
+<style is:global>
+  :root {
+    --paper: #eee8dc;
+    --paper-deep: #e2dacb;
+    --card: #faf7f1;
+    --ink: #26221e;
+    --muted: #6b6359;
+    --thread: #b0242c;
+    --mono: 'IBM Plex Mono', ui-monospace, monospace;
+    --serif: 'IBM Plex Serif', Georgia, serif;
+    --gutter: clamp(16px, 4vw, 40px);
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; color: var(--ink); font: 400 14px/1.6 var(--mono);
+    background-color: var(--paper);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .35 0 0 0 0 .3 0 0 0 0 .25 0 0 0 .09 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
+  :focus-visible { outline: 2px dashed var(--thread); outline-offset: 3px; }
+
+  .tag-bar {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 20;
+    display: flex; justify-content: space-between; align-items: center; gap: 16px;
+    padding: 14px var(--gutter); pointer-events: none;
+  }
+  .tag-bar > * { pointer-events: auto; }
+  .tag-bar .name, .tag-bar nav a, .tag-bar nav button {
+    font: 500 12px/1 var(--mono); letter-spacing: 0.04em; text-transform: lowercase;
+    color: var(--ink); text-decoration: none;
+    background: var(--card); padding: 8px 10px; border: 0;
+    box-shadow: 0 1px 2px rgb(60 40 20 / 0.18);
+    cursor: pointer;
+  }
+  .tag-bar nav { display: flex; gap: 8px; }
+  .tag-bar nav a:hover, .tag-bar nav button:hover, .tag-bar .name:hover { color: var(--thread); }
+
+  .stitch-rule { height: 2px; border: 0; margin: 40px 0; background: repeating-linear-gradient(90deg, var(--thread) 0 9px, transparent 9px 16px); }
+</style>

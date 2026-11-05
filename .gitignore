@@ -1,2 +1,6 @@
-_site
-.sass-cache
+node_modules/
+dist/
+.astro/
+.DS_Store
+# Instagram source images; byte-identical copies live in public/artwork/full/
+/artwork/
