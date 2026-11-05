@@ -1,7 +1,7 @@
 ---
-import Thread from '../../../layouts/Thread.astro';
-import { allWorks, full, thumb, label, neighbours } from '../../../lib/works.js';
-import { artist } from '../../../data/site.js';
+import Thread from '../../layouts/Thread.astro';
+import { allWorks, full, thumb, label, neighbours } from '../../lib/works.js';
+import { artist } from '../../data/site.js';
 
 export function getStaticPaths() {
   return allWorks.map((w) => ({ params: { id: w.id }, props: { work: w } }));
@@ -26,8 +26,8 @@ const { prev, next } = neighbours(work.id);
           <div class="postmark">Vancouver<br />{work.year}</div>
           <p class="typed">
             {work.title}, {work.year}<br />
-            {work.medium ?? 'medium to be added'}<br />
-            {work.dimensions ?? 'dimensions to be added'}<br />
+            {work.medium && <>{work.medium}<br /></>}
+            {work.dimensions && <>{work.dimensions}<br /></>}
             {artist.name}
           </p>
         </div>
@@ -37,14 +37,14 @@ const { prev, next } = neighbours(work.id);
     <div class="controls">
       <button type="button" id="flip">turn over</button>
       <button type="button" id="send">send as postcard</button>
-      <a href={`/thread/about/?work=${work.id}#contact`}>inquire</a>
+      <a href="/about/#contact">inquire</a>
       <span id="status" role="status"></span>
     </div>
 
     <nav class="pager" aria-label="More work">
-      <a href={`/thread/work/${prev.id}/`}>← previous</a>
-      <a href="/thread/">back to the surface</a>
-      <a href={`/thread/work/${next.id}/`}>next →</a>
+      <a href={`/work/${prev.id}/`}>← previous</a>
+      <a href="/">back to the surface</a>
+      <a href={`/work/${next.id}/`}>next →</a>
     </nav>
   </main>
 </Thread>

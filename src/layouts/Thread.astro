@@ -1,5 +1,4 @@
 ---
-import Switcher from '../components/Switcher.astro';
 import { artist } from '../data/site.js';
 const { title, description = artist.tagline, image } = Astro.props;
 const fullTitle = title ? `${title} · ${artist.name}` : artist.name;
@@ -20,15 +19,14 @@ const fullTitle = title ? `${title} · ${artist.name}` : artist.name;
 </head>
 <body>
   <header class="tag-bar">
-    <a class="name" href="/thread/">{artist.name}</a>
+    <a class="name" href="/">{artist.name}</a>
     <nav aria-label="Main">
       <slot name="nav" />
-      <a href="/thread/about/">About</a>
+      <a href="/about/">About</a>
       <a href={artist.instagram}>Instagram</a>
     </nav>
   </header>
   <slot />
-  <Switcher current="thread" />
 </body>
 </html>
 

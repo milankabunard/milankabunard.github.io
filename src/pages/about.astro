@@ -1,6 +1,6 @@
 ---
-import Thread from '../../layouts/Thread.astro';
-import { artist, bio, statement, collections, exhibitions } from '../../data/site.js';
+import Thread from '../layouts/Thread.astro';
+import { artist, bio, statement, collections, exhibitions } from '../data/site.js';
 ---
 <Thread title="About" description={bio[0]}>
   <main>
@@ -28,24 +28,12 @@ import { artist, bio, statement, collections, exhibitions } from '../../data/sit
     </section>
 
     <section class="sheet" id="contact">
-      <h2>Write to the studio</h2>
-      <p>Private viewings, studio visits, available work.</p>
-      <!-- Placeholder: wire to Formspree (or similar) before launch. -->
-      <form action="#" method="post">
-        <label>name <input name="name" autocomplete="name" required /></label>
-        <label>email <input name="email" type="email" autocomplete="email" required /></label>
-        <label>work <input name="work" id="work-field" /></label>
-        <label>message <textarea name="message" rows="5" required></textarea></label>
-        <button type="submit">send</button>
-      </form>
-      <p class="muted"><a href={artist.instagram}>Instagram</a> · <a href={artist.cultureCrawl}>Eastside Culture Crawl</a></p>
+      <h2>Contact</h2>
+      <p>For private viewings, studio visits and available work, send a direct message on Instagram. Mention the title and year of any work you are asking about.</p>
+      <p><a class="dm" href={artist.instagram}>message @milankabunard on Instagram</a></p>
+      <p class="muted">Open studio during the <a href={artist.cultureCrawl}>Eastside Culture Crawl</a>.</p>
     </section>
   </main>
-  <script>
-    const work = new URLSearchParams(location.search).get('work');
-    const field = document.getElementById('work-field') as HTMLInputElement | null;
-    if (work && field) field.value = work;
-  </script>
 </Thread>
 
 <style>
@@ -63,10 +51,5 @@ import { artist, bio, statement, collections, exhibitions } from '../../data/sit
   .tags strong { font-weight: 500; font-size: 13px; }
   .tags .year { color: var(--thread); }
 
-  form { display: grid; gap: 14px; margin: 20px 0; }
-  label { display: grid; gap: 4px; font-size: 11px; color: var(--muted); }
-  input, textarea { font: 14px var(--mono); color: var(--ink); background: transparent; border: 0; border-bottom: 1px dashed var(--muted); padding: 6px 0; }
-  textarea { border: 1px dashed var(--muted); padding: 8px; }
-  input:focus, textarea:focus { outline: none; border-color: var(--thread); }
-  button { justify-self: start; font: 500 12px var(--mono); background: var(--thread); color: #fff; border: 0; padding: 10px 16px; cursor: pointer; }
+  .dm { display: inline-block; font: 500 12px var(--mono); background: var(--thread); color: #fff; text-decoration: none; padding: 10px 16px; }
 </style>
