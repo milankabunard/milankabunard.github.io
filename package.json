@@ -5,6 +5,7 @@
   "scripts": {
     "import-artwork": "node scripts/import-artwork.mjs",
     "import-paintings": "node scripts/import-paintings.mjs",
+    "apply-catalogue": "node scripts/apply-catalogue.mjs",
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview"
