@@ -46,7 +46,8 @@ for (const [name, ids] of Object.entries(matches)) {
   if (ids.length) {
     for (const id of ids) {
       const work = byId.get(id);
-      if (!work) throw new Error(`${name}: no work ${id} in ${DATA}`);
+      // Works dropped from src/data/catalogue.csv are no longer in works.json.
+      if (!work) continue;
       Object.assign(work, await render(file, id), { source: `paintings/${name}`, category: 'painting' });
       replaced++;
     }
