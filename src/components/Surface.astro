@@ -137,32 +137,57 @@ const { works, shuffle = false } = Astro.props;
     drawThread();
   }
 
+  // Length of thread from its start to each pin, measured along the curve.
+  let pinLengths: number[] = [];
+
   function drawThread() {
-    let d = `M ${pins[0].x} ${pins[0].y - 60}`;
-    let prev = { x: pins[0].x, y: pins[0].y - 60 };
+    const start = { x: pins[0].x, y: pins[0].y - 60 };
+    const spans: string[] = [];
+    let prev = start;
     for (const pt of pins) {
       // Each span sags below the straight line, like thread hanging between pins.
       const sag = Math.min(140, Math.abs(pt.x - prev.x) * 0.35 + 40);
-      d += ` C ${prev.x} ${prev.y + sag}, ${pt.x} ${pt.y - sag * 0.4}, ${pt.x} ${pt.y}`;
+      spans.push(`C ${prev.x} ${prev.y + sag}, ${pt.x} ${pt.y - sag * 0.4}, ${pt.x} ${pt.y}`);
       prev = pt;
     }
+    // Measure each span on its own, then add them up.
+    const measure = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+    stitch.parentNode!.appendChild(measure);
+    let total = 0;
+    pinLengths = spans.map((span, i) => {
+      const from = i === 0 ? start : pins[i - 1];
+      measure.setAttribute('d', `M ${from.x} ${from.y} ${span}`);
+      total += measure.getTotalLength();
+      return total;
+    });
+    measure.remove();
+
+    const d = `M ${start.x} ${start.y} ${spans.join(' ')}`;
     stitch.setAttribute('d', d);
     reveal.setAttribute('d', d);
-    const len = reveal.getTotalLength();
-    reveal.style.strokeDasharray = `${len}`;
-    reveal.dataset.len = String(len);
+    reveal.style.strokeDasharray = `${total}`;
+    reveal.dataset.len = String(total);
     onScroll();
   }
 
   // --- The thread is drawn ahead of the reader as they scroll ---
+  // It reaches every pin above 85% of the window height, and the span to the
+  // next pin is drawn in proportion to how far the reader has scrolled toward it.
   function onScroll() {
     const len = Number(reveal.dataset.len);
     if (reduceMotion) { reveal.style.strokeDashoffset = '0'; return; }
     const top = surface.getBoundingClientRect().top + scrollY;
     const reach = scrollY + innerHeight * 0.85 - top;
-    const idx = pins.findIndex((p) => p.y > reach);
-    const fraction = idx === -1 ? 1 : Math.max(0, idx / pins.length);
-    reveal.style.strokeDashoffset = `${len * (1 - fraction)}`;
+    const next = pins.findIndex((p) => p.y > reach);
+    let shown: number;
+    if (next === -1) shown = len;
+    else {
+      const fromY = next === 0 ? pins[0].y - 60 : pins[next - 1].y;
+      const fromLen = next === 0 ? 0 : pinLengths[next - 1];
+      const part = Math.min(1, Math.max(0, (reach - fromY) / (pins[next].y - fromY)));
+      shown = fromLen + part * (pinLengths[next] - fromLen);
+    }
+    reveal.style.strokeDashoffset = `${len - shown}`;
   }
 
   layout();
