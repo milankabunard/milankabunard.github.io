@@ -15,12 +15,8 @@ const { prev, next } = neighbours(work.id);
       <div class="face front">
         <img src={full(work)} alt={work.alt} width={work.width} height={work.height} style={`background:${work.color}`} />
       </div>
-      <div class="face back" aria-label="Back of the postcard">
-        <div class="message">
-          <label for="msg">Message</label>
-          <textarea id="msg" maxlength="280" placeholder="Write a few words to send with this work…"></textarea>
-          <p class="received" id="received" hidden></p>
-        </div>
+      <div class={`face back${work.blurb ? '' : ' no-blurb'}`} aria-label="Back of the card">
+        {work.blurb && <div class="message"><p class="blurb">{work.blurb}</p></div>}
         <div class="address">
           <div class="stamp"><img src={thumb(work)} alt="" /></div>
           <div class="postmark">Vancouver<br />{work.year}</div>
@@ -36,9 +32,7 @@ const { prev, next } = neighbours(work.id);
 
     <div class="controls">
       <button type="button" id="flip">turn over</button>
-      <button type="button" id="send">send as postcard</button>
       <a href="/about/#contact">inquire</a>
-      <span id="status" role="status"></span>
     </div>
 
     <nav class="pager" aria-label="More work">
@@ -58,11 +52,11 @@ const { prev, next } = neighbours(work.id);
   .card.flipped .front { transform: rotateY(-180deg); }
   .card.flipped .back { transform: rotateY(0deg); }
 
-  .message { padding: 16px 24px 16px 8px; border-right: 1px dashed var(--muted); display: flex; flex-direction: column; }
-  .message label { font-size: 11px; color: var(--muted); margin-bottom: 8px; }
-  textarea { flex: 1; min-height: 200px; resize: none; border: 0; background: repeating-linear-gradient(transparent 0 31px, #d9d1c3 31px 32px); font: 300 italic 20px/32px var(--serif); color: var(--ink); padding: 0; }
-  textarea:focus { outline: none; }
-  .received { font: 300 italic 22px/1.5 var(--serif); margin: 0; }
+  .back.no-blurb { grid-template-columns: 1fr; }
+  .back.no-blurb .address { width: min(420px, 100%); margin-left: auto; }
+  .message { padding: 16px 24px 16px 8px; border-right: 1px dashed var(--muted); overflow-y: auto; }
+  .blurb { margin: 0; font: 300 italic 20px/32px var(--serif); white-space: pre-line;
+    background: repeating-linear-gradient(transparent 0 31px, #d9d1c3 31px 32px); }
 
   .address { position: relative; padding: 16px 8px 16px 24px; display: flex; flex-direction: column; justify-content: flex-end; min-height: 300px; }
   .stamp { position: absolute; top: 16px; right: 8px; width: 84px; padding: 5px; background: #fff; outline: 2px dotted var(--paper-deep); outline-offset: -1px; }
@@ -72,7 +66,6 @@ const { prev, next } = neighbours(work.id);
 
   .controls { display: flex; flex-wrap: wrap; gap: 20px; align-items: center; margin-top: 28px; font-size: 13px; }
   .controls button, .controls a { font: inherit; color: var(--thread); background: none; border: 0; padding: 0; cursor: pointer; text-decoration: underline dashed; text-underline-offset: 3px; }
-  #status { color: var(--muted); }
 
   .pager { display: flex; justify-content: space-between; margin-top: 64px; font-size: 12px; }
   .pager a { text-decoration: none; color: var(--muted); }
@@ -89,33 +82,12 @@ const { prev, next } = neighbours(work.id);
 <script>
   const card = document.getElementById('card')!;
   const flip = document.getElementById('flip')!;
-  const msg = document.getElementById('msg') as HTMLTextAreaElement;
-  const status = document.getElementById('status')!;
 
   const setFlipped = (on: boolean) => {
     card.classList.toggle('flipped', on);
     flip.textContent = on ? 'turn back' : 'turn over';
   };
   flip.addEventListener('click', () => setFlipped(!card.classList.contains('flipped')));
-
-  // A received postcard opens on its message side.
-  const received = new URLSearchParams(location.search).get('m');
-  if (received) {
-    const p = document.getElementById('received')!;
-    p.textContent = received;
-    p.hidden = false;
-    msg.hidden = true;
-    document.querySelector('.message label')!.textContent = 'Someone sent you this';
-    setFlipped(true);
-  }
-
-  document.getElementById('send')!.addEventListener('click', async () => {
-    if (!card.classList.contains('flipped')) { setFlipped(true); msg.focus(); status.textContent = 'Write a message, then send.'; return; }
-    const url = new URL(location.pathname, location.origin);
-    if (msg.value.trim()) url.searchParams.set('m', msg.value.trim());
-    try {
-      if (navigator.share) await navigator.share({ title: document.title, url: url.href });
-      else { await navigator.clipboard.writeText(url.href); status.textContent = 'Link copied. Paste it anywhere to send.'; }
-    } catch { status.textContent = url.href; }
-  });
+  // "turn over" in the home page pop-up links here with #back.
+  if (location.hash === '#back') setFlipped(true);
 </script>

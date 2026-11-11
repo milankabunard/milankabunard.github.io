@@ -1,5 +1,7 @@
 ---
 import { artist } from '../data/site.js';
+import { allSeries } from '../lib/works.js';
+const series = allSeries();
 const { title, description = artist.tagline, image } = Astro.props;
 const fullTitle = title ? `${title} · ${artist.name}` : artist.name;
 ---
@@ -19,14 +21,51 @@ const fullTitle = title ? `${title} · ${artist.name}` : artist.name;
 </head>
 <body>
   <header class="tag-bar">
-    <a class="name" href="/">{artist.name}</a>
+    <div class="left">
+      <button type="button" class="menu-button" id="menu-button" aria-expanded="false" aria-controls="menu" aria-label="Menu">
+        <span class="bars" aria-hidden="true"></span>
+      </button>
+      <a class="name" href="/">{artist.name}</a>
+    </div>
     <nav aria-label="Main">
       <slot name="nav" />
       <a href="/about/">About</a>
       <a href={artist.instagram}>Instagram</a>
     </nav>
   </header>
+  <nav class="menu" id="menu" aria-label="Series" hidden>
+    <p class="menu-heading">series</p>
+    <ul>
+      {series.map((s) => (
+        <li><a href={`/series/${s.slug}/`}>{s.name}<span>{s.works.length}</span></a></li>
+      ))}
+    </ul>
+    <hr class="stitch-rule" />
+    <ul>
+      <li><a href="/">All works</a></li>
+      <li><a href="/about/">About</a></li>
+      <li><a href={artist.instagram}>Instagram</a></li>
+    </ul>
+  </nav>
   <slot />
+  <script>
+    const button = document.getElementById('menu-button')!;
+    const menu = document.getElementById('menu')!;
+    const setOpen = (open: boolean) => {
+      menu.hidden = !open;
+      button.setAttribute('aria-expanded', String(open));
+      if (open) menu.querySelector('a')?.focus();
+    };
+    button.addEventListener('click', () => setOpen(menu.hidden));
+    addEventListener('keydown', (e) => { if (e.key === 'Escape' && !menu.hidden) { setOpen(false); button.focus(); } });
+    addEventListener('click', (e) => {
+      if (!menu.hidden && !menu.contains(e.target as Node) && !button.contains(e.target as Node)) setOpen(false);
+    });
+    // Mark the current series in the menu.
+    menu.querySelectorAll('a').forEach((a) => {
+      if (a.getAttribute('href') === location.pathname) a.setAttribute('aria-current', 'page');
+    });
+  </script>
 </body>
 </html>
 
@@ -58,7 +97,8 @@ const fullTitle = title ? `${title} · ${artist.name}` : artist.name;
     padding: 14px var(--gutter); pointer-events: none;
   }
   .tag-bar > * { pointer-events: auto; }
-  .tag-bar .name, .tag-bar nav a, .tag-bar nav button {
+  .tag-bar .left { display: flex; gap: 8px; }
+  .tag-bar .name, .tag-bar nav a, .tag-bar nav button, .menu-button {
     font: 500 12px/1 var(--mono); letter-spacing: 0.04em; text-transform: lowercase;
     color: var(--ink); text-decoration: none;
     background: var(--card); padding: 8px 10px; border: 0;
@@ -66,7 +106,32 @@ const fullTitle = title ? `${title} · ${artist.name}` : artist.name;
     cursor: pointer;
   }
   .tag-bar nav { display: flex; gap: 8px; }
-  .tag-bar nav a:hover, .tag-bar nav button:hover, .tag-bar .name:hover { color: var(--thread); }
+  .tag-bar nav a:hover, .tag-bar nav button:hover, .tag-bar .name:hover, .menu-button:hover { color: var(--thread); }
+
+  .menu-button { width: 32px; display: grid; place-items: center; }
+  .menu-button .bars, .menu-button .bars::before, .menu-button .bars::after {
+    display: block; width: 14px; height: 2px; background: currentColor; content: '';
+  }
+  .menu-button .bars { position: relative; }
+  .menu-button .bars::before { position: absolute; top: -5px; }
+  .menu-button .bars::after { position: absolute; top: 5px; }
+  .menu-button[aria-expanded='true'] { color: var(--thread); }
+
+  .menu {
+    position: fixed; z-index: 30; top: 56px; left: var(--gutter);
+    width: min(340px, 100vw - 2 * var(--gutter)); max-height: calc(100vh - 80px); overflow-y: auto;
+    background: var(--card); padding: 20px 22px 18px;
+    box-shadow: 0 1px 1px rgb(60 40 20 / 0.12), 0 18px 36px -12px rgb(60 40 20 / 0.45);
+  }
+  .menu-heading { font-size: 11px; color: var(--thread); margin: 0 0 10px; }
+  .menu ul { list-style: none; margin: 0; padding: 0; }
+  .menu li a {
+    display: flex; justify-content: space-between; gap: 16px; padding: 6px 0;
+    font-size: 13px; text-decoration: none; border-bottom: 1px dashed transparent;
+  }
+  .menu li a span { color: var(--muted); }
+  .menu li a:hover, .menu li a[aria-current] { color: var(--thread); border-bottom-color: var(--thread); }
+  .menu .stitch-rule { margin: 14px 0; }
 
   .stitch-rule { height: 2px; border: 0; margin: 40px 0; background: repeating-linear-gradient(90deg, var(--thread) 0 9px, transparent 9px 16px); }
 </style>

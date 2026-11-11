@@ -1,48 +1,51 @@
 [
   {
     "id": "p1794349333",
-    "title": "Untitled",
-    "medium": null,
-    "dimensions": null,
+    "title": "Sunset in the morning number 7",
+    "medium": "Mixed media on canvas",
+    "dimensions": "40” X 30”",
     "availability": null,
     "year": 2026,
     "date": "2026-11-10",
-    "alt": "Untitled, 2026, by Milanka Bunard",
+    "alt": "Sunset in the morning number 7, 2026, by Milanka Bunard",
     "width": 1814,
     "height": 2400,
     "color": "#888888",
     "source": "paintings/IMG_1213.heic",
-    "category": "painting"
+    "category": "painting",
+    "blurb": null
   },
   {
     "id": "p1794349713",
-    "title": "Untitled",
-    "medium": null,
-    "dimensions": null,
+    "title": "Not dreaming number 1",
+    "medium": "Mixed media on canvas",
+    "dimensions": "24\" X 36\"",
     "availability": null,
     "year": 2026,
     "date": "2026-11-10",
-    "alt": "Untitled, 2026, by Milanka Bunard",
+    "alt": "Not dreaming number 1, 2026, by Milanka Bunard",
     "width": 1661,
     "height": 2400,
     "color": "#282828",
     "source": "paintings/IMG_1215.heic",
-    "category": "painting"
+    "category": "painting",
+    "blurb": null
   },
   {
     "id": "p1794259837",
-    "title": "Untitled",
-    "medium": null,
+    "title": "Unraveling number 1",
+    "medium": "Needlepoint on paper",
     "dimensions": null,
     "availability": null,
     "year": 2026,
     "date": "2026-11-09",
-    "alt": "Untitled, 2026, by Milanka Bunard",
+    "alt": "Unraveling number 1, 2026, by Milanka Bunard",
     "width": 1585,
     "height": 2400,
     "color": "#c8c8c8",
     "source": "paintings/IMG_1203.heic",
-    "category": "painting"
+    "category": "painting",
+    "blurb": null
   },
   {
     "id": "p1778348854",
@@ -57,7 +60,8 @@
     "height": 2400,
     "color": "#484848",
     "source": "paintings/IMG_8707.heic",
-    "category": "painting"
+    "category": "painting",
+    "blurb": null
   },
   {
     "id": "p1778348990",
@@ -72,7 +76,8 @@
     "height": 2400,
     "color": "#486848",
     "source": "paintings/IMG_8708.heic",
-    "category": "painting"
+    "category": "painting",
+    "blurb": null
   },
   {
     "id": "p1778349019",
@@ -87,7 +92,8 @@
     "height": 2400,
     "color": "#383838",
     "source": "paintings/IMG_8709.heic",
-    "category": "painting"
+    "category": "painting",
+    "blurb": null
   },
   {
     "id": "w1736796408",
@@ -102,7 +108,8 @@
     "height": 2357,
     "color": "#a8a8b8",
     "alt": "Mood indigo number 25, 2025, by Milanka Bunard",
-    "category": "painting"
+    "category": "painting",
+    "blurb": null
   },
   {
     "id": "w1736530479b",
@@ -117,7 +124,8 @@
     "height": 2400,
     "color": "#486878",
     "alt": "Mood indigo number 24, 2025, by Milanka Bunard",
-    "category": "painting"
+    "category": "painting",
+    "blurb": null
   },
   {
     "id": "w1736386481b",
@@ -132,7 +140,8 @@
     "height": 2381,
     "color": "#385868",
     "alt": "Mood indigo number 23, 2025, by Milanka Bunard",
-    "category": "painting"
+    "category": "painting",
+    "blurb": null
   },
   {
     "id": "w1718212249",
@@ -147,7 +156,8 @@
     "height": 2400,
     "color": "#c8a8a8",
     "alt": "Mood indigo number 22, 2024, by Milanka Bunard",
-    "category": "painting"
+    "category": "painting",
+    "blurb": null
   },
   {
     "id": "w1718125815",
@@ -162,7 +172,8 @@
     "height": 2388,
     "color": "#385878",
     "alt": "Mood indigo number 21, 2024, by Milanka Bunard",
-    "category": "painting"
+    "category": "painting",
+    "blurb": null
   },
   {
     "id": "w1718036720",
@@ -177,7 +188,8 @@
     "height": 2390,
     "color": "#285878",
     "alt": "Mood indigo number 20, 2024, by Milanka Bunard",
-    "category": "painting"
+    "category": "painting",
+    "blurb": null
   },
   {
     "id": "w1717774821",
@@ -192,7 +204,8 @@
     "height": 2356,
     "color": "#687888",
     "alt": "Mood indigo number 19, 2024, by Milanka Bunard",
-    "category": "painting"
+    "category": "painting",
+    "blurb": null
   },
   {
     "id": "w1717694945",
@@ -207,7 +220,8 @@
     "height": 2339,
     "color": "#286888",
     "alt": "Mood indigo number 18, 2024, by Milanka Bunard",
-    "category": "painting"
+    "category": "painting",
+    "blurb": null
   },
   {
     "id": "w1717606900bb",
@@ -222,7 +236,8 @@
     "height": 2400,
     "color": "#d8d8d8",
     "alt": "Mood indigo number 17, 2024, by Milanka Bunard",
-    "category": "painting"
+    "category": "painting",
+    "blurb": "Continuing with an exploration of textures and shapes."
   },
   {
     "id": "w1716570887",
@@ -237,7 +252,8 @@
     "height": 2400,
     "color": "#687888",
     "alt": "Mood indigo number 16, 2024, by Milanka Bunard",
-    "category": "painting"
+    "category": "painting",
+    "blurb": null
   },
   {
     "id": "w1716480033",
@@ -252,7 +268,8 @@
     "height": 2400,
     "color": "#88a8b8",
     "alt": "Mood indigo number 15, 2024, by Milanka Bunard",
-    "category": "painting"
+    "category": "painting",
+    "blurb": null
   },
   {
     "id": "w1711132844bb",
@@ -267,7 +284,8 @@
     "height": 2400,
     "color": "#d8b8c8",
     "alt": "Mood indigo number 14, 2024, by Milanka Bunard",
-    "category": "painting"
+    "category": "painting",
+    "blurb": "Continuing with an exploration of textures and shapes."
   },
   {
     "id": "w1710985249bb",
@@ -282,7 +300,8 @@
     "height": 2335,
     "color": "#384868",
     "alt": "Mood indigo number 12, 2024, by Milanka Bunard",
-    "category": "painting"
+    "category": "painting",
+    "blurb": "Continuing with an exploration of textures and shapes."
   },
   {
     "id": "w1711044613",
@@ -297,7 +316,8 @@
     "height": 2394,
     "color": "#b8b8c8",
     "alt": "Mood indigo number 13, 2024, by Milanka Bunard",
-    "category": "painting"
+    "category": "painting",
+    "blurb": "Continuing with an exploration of textures and shapes."
   },
   {
     "id": "p1709831862",
@@ -312,7 +332,8 @@
     "height": 2093,
     "color": "#383838",
     "source": "paintings/IMG_0589.heic",
-    "category": "painting"
+    "category": "painting",
+    "blurb": null
   },
   {
     "id": "w1708454519",
@@ -326,7 +347,8 @@
     "width": 1440,
     "height": 1799,
     "color": "#484858",
-    "alt": "Mood indigo number 12, 2024, by Milanka Bunard"
+    "alt": "Mood indigo number 12, 2024, by Milanka Bunard",
+    "blurb": "Continuing with an exploration of textures and shapes."
   },
   {
     "id": "w1707762758",
@@ -341,7 +363,8 @@
     "height": 2400,
     "color": "#484858",
     "alt": "Mood indigo number 11, 2024, by Milanka Bunard",
-    "category": "painting"
+    "category": "painting",
+    "blurb": "The blue colour offers endless variations. Continuing with an exploration of textures and shapes."
   },
   {
     "id": "w1707676414",
@@ -356,7 +379,8 @@
     "height": 2400,
     "color": "#383858",
     "alt": "Mood indigo number 10, 2024, by Milanka Bunard",
-    "category": "painting"
+    "category": "painting",
+    "blurb": "The blue colour offers endless variations.\nContinuing with an exploration of textures and shapes."
   },
   {
     "id": "w1707587132",
@@ -371,7 +395,8 @@
     "height": 2330,
     "color": "#282858",
     "alt": "Mood indigo number 9, 2024, by Milanka Bunard",
-    "category": "painting"
+    "category": "painting",
+    "blurb": "The blue colour offers endless variations.\nContinuing with an exploration of textures and shapes."
   },
   {
     "id": "w1707497631",
@@ -386,7 +411,8 @@
     "height": 2400,
     "color": "#184868",
     "alt": "Mood indigo number 8, 2024, by Milanka Bunard",
-    "category": "painting"
+    "category": "painting",
+    "blurb": "The blue colour offers endless variations.\nContinuing with an exploration of textures and shapes."
   },
   {
     "id": "w1707417446",
@@ -401,7 +427,8 @@
     "height": 2316,
     "color": "#4878b8",
     "alt": "Mood indigo number 7, 2024, by Milanka Bunard",
-    "category": "painting"
+    "category": "painting",
+    "blurb": "The blue colour offers endless variations.\nContinuing with an exploration of textures and shapes."
   },
   {
     "id": "p1706647363",
@@ -416,7 +443,8 @@
     "height": 2364,
     "color": "#b87898",
     "source": "paintings/IMG_0267.heic",
-    "category": "painting"
+    "category": "painting",
+    "blurb": null
   },
   {
     "id": "w1698078565bb",
@@ -431,7 +459,8 @@
     "height": 1800,
     "color": "#e8b8d8",
     "alt": "Sunset in the morning number 6, 2023, by Milanka Bunard",
-    "category": "painting"
+    "category": "painting",
+    "blurb": null
   },
   {
     "id": "w1697737535",
@@ -446,7 +475,8 @@
     "height": 2400,
     "color": "#78c8e8",
     "alt": "Sunset in the morning number 5, 2023, by Milanka Bunard",
-    "category": "painting"
+    "category": "painting",
+    "blurb": null
   },
   {
     "id": "w1697480809",
@@ -460,7 +490,8 @@
     "width": 1440,
     "height": 1800,
     "color": "#384868",
-    "alt": "Sunset in the morning number 4, 2023, by Milanka Bunard"
+    "alt": "Sunset in the morning number 4, 2023, by Milanka Bunard",
+    "blurb": null
   },
   {
     "id": "p1697246052",
@@ -475,7 +506,8 @@
     "height": 2400,
     "color": "#383848",
     "source": "paintings/IMG_9178.heic",
-    "category": "painting"
+    "category": "painting",
+    "blurb": null
   },
   {
     "id": "w1694620970b",
@@ -490,7 +522,8 @@
     "height": 2400,
     "color": "#989898",
     "alt": "Sunset in the morning number 3, 2023, by Milanka Bunard",
-    "category": "painting"
+    "category": "painting",
+    "blurb": "Picking up from where I left off.\nSame but different.\n\n“I do not seek. I find “\nPicasso"
   },
   {
     "id": "w1689352415bb",
@@ -504,7 +537,8 @@
     "width": 1440,
     "height": 1800,
     "color": "#d8d8d8",
-    "alt": "Mood indigo number 6, 2023, by Milanka Bunard"
+    "alt": "Mood indigo number 6, 2023, by Milanka Bunard",
+    "blurb": "Blue phase is so satisfying. Continuing with exploration of textures, shapes and colours."
   },
   {
     "id": "w1688573917",
@@ -519,7 +553,8 @@
     "height": 2400,
     "color": "#284868",
     "alt": "Mood indigo number 5, 2023, by Milanka Bunard",
-    "category": "painting"
+    "category": "painting",
+    "blurb": "Back to making art."
   },
   {
     "id": "w1687537464",
@@ -533,7 +568,8 @@
     "width": 1283,
     "height": 732,
     "color": "#c8d8d8",
-    "alt": "Self vs self, red thread on paper 2012, 2023, by Milanka Bunard"
+    "alt": "Self vs self, red thread on paper 2012, 2023, by Milanka Bunard",
+    "blurb": "\"Painting isn't an aesthetic operation, it's a form of magic designed as a mediator between this strange hostile world and us.\" Picasso"
   },
   {
     "id": "w1687450915",
@@ -547,7 +583,8 @@
     "width": 1440,
     "height": 1775,
     "color": "#d8d8c8",
-    "alt": "Forgotten words, mixed media 2015, 2023, by Milanka Bunard"
+    "alt": "Forgotten words, mixed media 2015, 2023, by Milanka Bunard",
+    "blurb": null
   },
   {
     "id": "w1687367600",
@@ -561,7 +598,8 @@
     "width": 1298,
     "height": 1312,
     "color": "#e8e8e8",
-    "alt": "Anahata Chakra, 2023, by Milanka Bunard"
+    "alt": "Anahata Chakra, 2023, by Milanka Bunard",
+    "blurb": null
   },
   {
     "id": "w1687277102",
@@ -575,7 +613,8 @@
     "width": 1291,
     "height": 1298,
     "color": "#e8f8f8",
-    "alt": "Loss, 2023, by Milanka Bunard"
+    "alt": "Loss, 2023, by Milanka Bunard",
+    "blurb": null
   },
   {
     "id": "w1686935381",
@@ -589,7 +628,8 @@
     "width": 1283,
     "height": 1230,
     "color": "#d8e8e8",
-    "alt": "I’m going out to play, 2023, by Milanka Bunard"
+    "alt": "I’m going out to play, 2023, by Milanka Bunard",
+    "blurb": null
   },
   {
     "id": "w1686159241",
@@ -604,7 +644,8 @@
     "height": 2400,
     "color": "#a8a8a8",
     "alt": "Yesterday was a strange day., 2023, by Milanka Bunard",
-    "category": "painting"
+    "category": "painting",
+    "blurb": null
   },
   {
     "id": "p1676137913",
@@ -619,7 +660,8 @@
     "height": 2400,
     "color": "#385868",
     "source": "paintings/IMG_6510.heic",
-    "category": "painting"
+    "category": "painting",
+    "blurb": "The journey through the magical world of abstract expressionism continues.\n\n\"Painting isn't an aesthetic operation, it's a form of magic designed as a mediator between this strange hostile world and us.\" Picasso"
   },
   {
     "id": "w1675445463",
@@ -633,7 +675,8 @@
     "width": 1440,
     "height": 1800,
     "color": "#d8c8a8",
-    "alt": "Sunset in the morning, 2023, by Milanka Bunard"
+    "alt": "Sunset in the morning, 2023, by Milanka Bunard",
+    "blurb": null
   },
   {
     "id": "p1668362105",
@@ -648,7 +691,8 @@
     "height": 2400,
     "color": "#487888",
     "source": "paintings/IMG_5616.heic",
-    "category": "painting"
+    "category": "painting",
+    "blurb": null
   },
   {
     "id": "p1668362125",
@@ -663,7 +707,8 @@
     "height": 2371,
     "color": "#587868",
     "source": "paintings/IMG_5617.heic",
-    "category": "painting"
+    "category": "painting",
+    "blurb": null
   },
   {
     "id": "p1668362140",
@@ -678,7 +723,8 @@
     "height": 2400,
     "color": "#083858",
     "source": "paintings/IMG_5618.heic",
-    "category": "painting"
+    "category": "painting",
+    "blurb": null
   },
   {
     "id": "p1668362156",
@@ -693,7 +739,8 @@
     "height": 2400,
     "color": "#084868",
     "source": "paintings/IMG_5619.heic",
-    "category": "painting"
+    "category": "painting",
+    "blurb": null
   },
   {
     "id": "p1668362185",
@@ -708,7 +755,8 @@
     "height": 2400,
     "color": "#486868",
     "source": "paintings/IMG_5620.heic",
-    "category": "painting"
+    "category": "painting",
+    "blurb": null
   },
   {
     "id": "p1668362205",
@@ -723,7 +771,8 @@
     "height": 2390,
     "color": "#083828",
     "source": "paintings/IMG_5622.heic",
-    "category": "painting"
+    "category": "painting",
+    "blurb": null
   },
   {
     "id": "p1667537775",
@@ -738,7 +787,8 @@
     "height": 2400,
     "color": "#082848",
     "source": "paintings/IMG_5565.heic",
-    "category": "painting"
+    "category": "painting",
+    "blurb": null
   },
   {
     "id": "p1636562799",
@@ -753,7 +803,8 @@
     "height": 2394,
     "color": "#e8c8d8",
     "source": "paintings/IMG_2122.heic",
-    "category": "painting"
+    "category": "painting",
+    "blurb": null
   },
   {
     "id": "w1636572686bb",
@@ -768,7 +819,8 @@
     "height": 1925,
     "color": "#383838",
     "alt": "Nerves and feelings number 29, 2021, by Milanka Bunard",
-    "category": "painting"
+    "category": "painting",
+    "blurb": null
   },
   {
     "id": "w1636398039",
@@ -783,7 +835,8 @@
     "height": 2400,
     "color": "#587898",
     "alt": "Nerves and feelings number 28, 2021, by Milanka Bunard",
-    "category": "painting"
+    "category": "painting",
+    "blurb": null
   },
   {
     "id": "w1636223037bb",
@@ -797,7 +850,8 @@
     "width": 1440,
     "height": 1440,
     "color": "#d89898",
-    "alt": "Nerves and feelings number 27, 2021, by Milanka Bunard"
+    "alt": "Nerves and feelings number 27, 2021, by Milanka Bunard",
+    "blurb": null
   },
   {
     "id": "p1635352928",
@@ -812,7 +866,8 @@
     "height": 2400,
     "color": "#080808",
     "source": "paintings/IMG_1953.heic",
-    "category": "painting"
+    "category": "painting",
+    "blurb": null
   },
   {
     "id": "w1635356536b",
@@ -827,7 +882,8 @@
     "height": 1816,
     "color": "#080808",
     "alt": "Nerves and feelings number 25, 2021, by Milanka Bunard",
-    "category": "painting"
+    "category": "painting",
+    "blurb": null
   },
   {
     "id": "w1635271393",
@@ -842,7 +898,8 @@
     "height": 2400,
     "color": "#080808",
     "alt": "Nerves and feelings number 24, 2021, by Milanka Bunard",
-    "category": "painting"
+    "category": "painting",
+    "blurb": null
   },
   {
     "id": "w1635189345",
@@ -856,7 +913,8 @@
     "width": 1440,
     "height": 1800,
     "color": "#f88868",
-    "alt": "Nerves and feelings number 23, 2021, by Milanka Bunard"
+    "alt": "Nerves and feelings number 23, 2021, by Milanka Bunard",
+    "blurb": null
   },
   {
     "id": "p1635102245",
@@ -871,7 +929,8 @@
     "height": 2400,
     "color": "#e8b8b8",
     "source": "paintings/IMG_1917.heic",
-    "category": "painting"
+    "category": "painting",
+    "blurb": null
   },
   {
     "id": "w1635016346",
@@ -885,7 +944,8 @@
     "width": 1440,
     "height": 1496,
     "color": "#c88898",
-    "alt": "Nerves and feelings number 21, 2021, by Milanka Bunard"
+    "alt": "Nerves and feelings number 21, 2021, by Milanka Bunard",
+    "blurb": null
   },
   {
     "id": "w1634146256",
@@ -900,7 +960,8 @@
     "height": 2400,
     "color": "#0858b8",
     "alt": "M in Wonderland number 15, 2021, by Milanka Bunard",
-    "category": "painting"
+    "category": "painting",
+    "blurb": null
   },
   {
     "id": "w1623092912",
@@ -914,7 +975,8 @@
     "width": 1440,
     "height": 1485,
     "color": "#d8d8c8",
-    "alt": "Nerves and feelings number 20, 2021, by Milanka Bunard"
+    "alt": "Nerves and feelings number 20, 2021, by Milanka Bunard",
+    "blurb": null
   },
   {
     "id": "p1622828383",
@@ -929,7 +991,8 @@
     "height": 2390,
     "color": "#f8b8c8",
     "source": "paintings/IMG_1029.heic",
-    "category": "painting"
+    "category": "painting",
+    "blurb": null
   },
   {
     "id": "p1622139777",
@@ -944,7 +1007,8 @@
     "height": 2384,
     "color": "#d8b8c8",
     "source": "paintings/IMG_0948.heic",
-    "category": "painting"
+    "category": "painting",
+    "blurb": null
   },
   {
     "id": "w1619812300",
@@ -958,7 +1022,8 @@
     "width": 1440,
     "height": 1440,
     "color": "#c8b8a8",
-    "alt": "Nerves and feelings number 18, 2021, by Milanka Bunard"
+    "alt": "Nerves and feelings number 18, 2021, by Milanka Bunard",
+    "blurb": null
   },
   {
     "id": "w1619726504b",
@@ -973,7 +1038,8 @@
     "height": 2400,
     "color": "#086878",
     "alt": "Nerves and feelings number 17, 2021, by Milanka Bunard",
-    "category": "painting"
+    "category": "painting",
+    "blurb": null
   },
   {
     "id": "p1619631428",
@@ -988,7 +1054,8 @@
     "height": 2324,
     "color": "#487878",
     "source": "paintings/IMG_0811.heic",
-    "category": "painting"
+    "category": "painting",
+    "blurb": null
   },
   {
     "id": "w1619540736bb",
@@ -1002,7 +1069,8 @@
     "width": 1440,
     "height": 1440,
     "color": "#d8d8d8",
-    "alt": "Nerves and feelings number 15, 2021, by Milanka Bunard"
+    "alt": "Nerves and feelings number 15, 2021, by Milanka Bunard",
+    "blurb": null
   },
   {
     "id": "w1619460061bb",
@@ -1016,7 +1084,8 @@
     "width": 1440,
     "height": 1440,
     "color": "#c8c8b8",
-    "alt": "Nerves and feelings number 14, 2021, by Milanka Bunard"
+    "alt": "Nerves and feelings number 14, 2021, by Milanka Bunard",
+    "blurb": null
   },
   {
     "id": "w1619374174",
@@ -1030,7 +1099,8 @@
     "width": 1440,
     "height": 1440,
     "color": "#c8c8b8",
-    "alt": "Nerves and feelings number 13, 2021, by Milanka Bunard"
+    "alt": "Nerves and feelings number 13, 2021, by Milanka Bunard",
+    "blurb": null
   },
   {
     "id": "w1619196656bb",
@@ -1044,7 +1114,8 @@
     "width": 1440,
     "height": 1433,
     "color": "#c8b8a8",
-    "alt": "Nerves and feelings number 11, 2021, by Milanka Bunard"
+    "alt": "Nerves and feelings number 11, 2021, by Milanka Bunard",
+    "blurb": null
   },
   {
     "id": "w1618939776bb",
@@ -1059,7 +1130,8 @@
     "height": 2394,
     "color": "#182848",
     "alt": "Nerves and feelings number 10, 2021, by Milanka Bunard",
-    "category": "painting"
+    "category": "painting",
+    "blurb": null
   },
   {
     "id": "w1618847956b",
@@ -1074,7 +1146,8 @@
     "height": 2400,
     "color": "#087898",
     "alt": "Nerves and feelings number 9, 2021, by Milanka Bunard",
-    "category": "painting"
+    "category": "painting",
+    "blurb": null
   },
   {
     "id": "w1618508839",
@@ -1089,7 +1162,8 @@
     "height": 2400,
     "color": "#989848",
     "alt": "Nerves and feelings number 8, 2021, by Milanka Bunard",
-    "category": "painting"
+    "category": "painting",
+    "blurb": null
   },
   {
     "id": "w1618336791",
@@ -1104,7 +1178,8 @@
     "height": 2400,
     "color": "#88a898",
     "alt": "Nerves and feelings number 6, 2021, by Milanka Bunard",
-    "category": "painting"
+    "category": "painting",
+    "blurb": null
   },
   {
     "id": "w1618247527",
@@ -1119,7 +1194,8 @@
     "height": 2367,
     "color": "#c8c8c8",
     "alt": "Nerves and feelings number 5, 2021, by Milanka Bunard",
-    "category": "painting"
+    "category": "painting",
+    "blurb": null
   },
   {
     "id": "w1617813813",
@@ -1134,7 +1210,8 @@
     "height": 2400,
     "color": "#181828",
     "alt": "Nerves and feelings number 7, 2021, by Milanka Bunard",
-    "category": "painting"
+    "category": "painting",
+    "blurb": null
   },
   {
     "id": "p1616451211",
@@ -1149,7 +1226,8 @@
     "height": 2390,
     "color": "#383838",
     "source": "paintings/IMG_0558.heic",
-    "category": "painting"
+    "category": "painting",
+    "blurb": "This was the first painting from the series Nerves and feelings that I started exactly two years today! It was an emotional roller coaster and a very fulfilling artistic endeavour."
   },
   {
     "id": "w1604686079",
@@ -1163,7 +1241,8 @@
     "width": 1440,
     "height": 1553,
     "color": "#281878",
-    "alt": "study of everyday objects, 2020, by Milanka Bunard"
+    "alt": "study of everyday objects, 2020, by Milanka Bunard",
+    "blurb": null
   },
   {
     "id": "w1589562277",
@@ -1177,7 +1256,8 @@
     "width": 1440,
     "height": 1800,
     "color": "#f8f8f8",
-    "alt": "Still life 2020, 2020, by Milanka Bunard"
+    "alt": "Still life 2020, 2020, by Milanka Bunard",
+    "blurb": null
   },
   {
     "id": "w1589485674",
@@ -1191,7 +1271,8 @@
     "width": 1440,
     "height": 1440,
     "color": "#181828",
-    "alt": "Still life 2020, Quarantine days, 2020, by Milanka Bunard"
+    "alt": "Still life 2020, Quarantine days, 2020, by Milanka Bunard",
+    "blurb": null
   },
   {
     "id": "w1584397305",
@@ -1206,7 +1287,8 @@
     "height": 2400,
     "color": "#382828",
     "alt": "Bonne anniversaire mon amour, 2020, by Milanka Bunard",
-    "category": "painting"
+    "category": "painting",
+    "blurb": null
   },
   {
     "id": "w1581702298",
@@ -1220,7 +1302,8 @@
     "width": 1440,
     "height": 1444,
     "color": "#d8c8a8",
-    "alt": "LOVE ❤️, 2020, by Milanka Bunard"
+    "alt": "LOVE ❤️, 2020, by Milanka Bunard",
+    "blurb": null
   },
   {
     "id": "w1581228696",
@@ -1234,7 +1317,8 @@
     "width": 1440,
     "height": 1800,
     "color": "#c80838",
-    "alt": "Artist, 2020, by Milanka Bunard"
+    "alt": "Artist, 2020, by Milanka Bunard",
+    "blurb": null
   },
   {
     "id": "w1572296028",
@@ -1248,7 +1332,8 @@
     "width": 1440,
     "height": 1592,
     "color": "#282828",
-    "alt": "Inner landscape No.10, 2019, by Milanka Bunard"
+    "alt": "Inner landscape No.10, 2019, by Milanka Bunard",
+    "blurb": null
   },
   {
     "id": "w1571453152",
@@ -1262,7 +1347,8 @@
     "width": 1440,
     "height": 1800,
     "color": "#887868",
-    "alt": "Inner landscape No.9, 2019, by Milanka Bunard"
+    "alt": "Inner landscape No.9, 2019, by Milanka Bunard",
+    "blurb": null
   },
   {
     "id": "w1570050831",
@@ -1276,7 +1362,8 @@
     "width": 1440,
     "height": 1440,
     "color": "#181818",
-    "alt": "Inner landscape No.6, 2019, by Milanka Bunard"
+    "alt": "Inner landscape No.6, 2019, by Milanka Bunard",
+    "blurb": null
   },
   {
     "id": "w1569873266",
@@ -1290,7 +1377,8 @@
     "width": 1440,
     "height": 1440,
     "color": "#181818",
-    "alt": "Inner landscape No.2, 2019, by Milanka Bunard"
+    "alt": "Inner landscape No.2, 2019, by Milanka Bunard",
+    "blurb": "I have always considered abstract painting the purest art form."
   },
   {
     "id": "w1569640797",
@@ -1305,7 +1393,8 @@
     "height": 1312,
     "color": "#a8a8b8",
     "alt": "Inner landscape No.1, 2019, by Milanka Bunard",
-    "category": "painting"
+    "category": "painting",
+    "blurb": "« En réalité, quand on est un artiste, on s'amuse. » César \"In reality, when you're an artist, you have fun. Caesar, March 2017. Inner landscape No.1"
   },
   {
     "id": "w1530131546",
@@ -1319,7 +1408,8 @@
     "width": 1080,
     "height": 1080,
     "color": "#f8f8f8",
-    "alt": "Zweisamkeit, 2018, by Milanka Bunard"
+    "alt": "Zweisamkeit, 2018, by Milanka Bunard",
+    "blurb": null
   },
   {
     "id": "w1530043572",
@@ -1333,7 +1423,8 @@
     "width": 1080,
     "height": 1350,
     "color": "#d8e8e8",
-    "alt": "No, 2018, by Milanka Bunard"
+    "alt": "No, 2018, by Milanka Bunard",
+    "blurb": null
   },
   {
     "id": "w1529965272",
@@ -1347,7 +1438,8 @@
     "width": 1080,
     "height": 1080,
     "color": "#e8f8f8",
-    "alt": "Wish you were here, 2018, by Milanka Bunard"
+    "alt": "Wish you were here, 2018, by Milanka Bunard",
+    "blurb": null
   },
   {
     "id": "w1529874747",
@@ -1361,7 +1453,8 @@
     "width": 1080,
     "height": 1080,
     "color": "#d8e8f8",
-    "alt": "Yes No, 2018, by Milanka Bunard"
+    "alt": "Yes No, 2018, by Milanka Bunard",
+    "blurb": null
   },
   {
     "id": "w1529789124",
@@ -1375,7 +1468,8 @@
     "width": 1080,
     "height": 1350,
     "color": "#d8d8d8",
-    "alt": "Not dreaming, 2018, by Milanka Bunard"
+    "alt": "Not dreaming, 2018, by Milanka Bunard",
+    "blurb": null
   },
   {
     "id": "w1529704496",
@@ -1389,7 +1483,8 @@
     "width": 320,
     "height": 320,
     "color": "#c8d8e8",
-    "alt": "YES, 2018, by Milanka Bunard"
+    "alt": "YES, 2018, by Milanka Bunard",
+    "blurb": null
   },
   {
     "id": "w1529378874",
@@ -1403,7 +1498,8 @@
     "width": 1080,
     "height": 1350,
     "color": "#d8e8e8",
-    "alt": "You make my life a joy to live, oy!, 2018, by Milanka Bunard"
+    "alt": "You make my life a joy to live, oy!, 2018, by Milanka Bunard",
+    "blurb": null
   },
   {
     "id": "w1529451356",
@@ -1417,7 +1513,8 @@
     "width": 1080,
     "height": 1080,
     "color": "#e8e8e8",
-    "alt": "She has a bulletproof soul, 2018, by Milanka Bunard"
+    "alt": "She has a bulletproof soul, 2018, by Milanka Bunard",
+    "blurb": null
   },
   {
     "id": "w1529166420",
@@ -1431,7 +1528,8 @@
     "width": 1080,
     "height": 805,
     "color": "#d8e8e8",
-    "alt": "Forgotten words, 2018, by Milanka Bunard"
+    "alt": "Forgotten words, 2018, by Milanka Bunard",
+    "blurb": null
   },
   {
     "id": "w1529090913",
@@ -1445,7 +1543,8 @@
     "width": 1080,
     "height": 1080,
     "color": "#d8e8e8",
-    "alt": "Positivo, 2018, by Milanka Bunard"
+    "alt": "Positivo, 2018, by Milanka Bunard",
+    "blurb": null
   },
   {
     "id": "w1528842010",
@@ -1459,7 +1558,8 @@
     "width": 1080,
     "height": 1080,
     "color": "#d8e8e8",
-    "alt": "My baby just cares for me, 2018, by Milanka Bunard"
+    "alt": "My baby just cares for me, 2018, by Milanka Bunard",
+    "blurb": null
   },
   {
     "id": "w1528756877",
@@ -1473,7 +1573,8 @@
     "width": 1080,
     "height": 1080,
     "color": "#d8e8e8",
-    "alt": "Not dreaming, 2018, by Milanka Bunard"
+    "alt": "Not dreaming, 2018, by Milanka Bunard",
+    "blurb": null
   },
   {
     "id": "w1519246378",
@@ -1487,7 +1588,8 @@
     "width": 1080,
     "height": 1210,
     "color": "#e8f8f8",
-    "alt": "Forgotten words, 2018, by Milanka Bunard"
+    "alt": "Forgotten words, 2018, by Milanka Bunard",
+    "blurb": null
   },
   {
     "id": "w1508105558",
@@ -1501,7 +1603,8 @@
     "width": 1080,
     "height": 1350,
     "color": "#383828",
-    "alt": "Happy birthday, 2017, by Milanka Bunard"
+    "alt": "Happy birthday, 2017, by Milanka Bunard",
+    "blurb": null
   },
   {
     "id": "w1499295144",
@@ -1515,7 +1618,8 @@
     "width": 1080,
     "height": 857,
     "color": "#e8d8b8",
-    "alt": "The window, 2017, by Milanka Bunard"
+    "alt": "The window, 2017, by Milanka Bunard",
+    "blurb": null
   },
   {
     "id": "w1496026534",
@@ -1529,7 +1633,8 @@
     "width": 1080,
     "height": 1080,
     "color": "#e8e8e8",
-    "alt": "Cloud, 2017, by Milanka Bunard"
+    "alt": "Cloud, 2017, by Milanka Bunard",
+    "blurb": null
   },
   {
     "id": "w1493161166",
@@ -1543,7 +1648,8 @@
     "width": 1080,
     "height": 1350,
     "color": "#282818",
-    "alt": "I've been here before, 2017, by Milanka Bunard"
+    "alt": "I've been here before, 2017, by Milanka Bunard",
+    "blurb": null
   },
   {
     "id": "w1489710652",
@@ -1558,7 +1664,8 @@
     "height": 1770,
     "color": "#080808",
     "alt": "Happy birthday love!, 2017, by Milanka Bunard",
-    "category": "painting"
+    "category": "painting",
+    "blurb": null
   },
   {
     "id": "w1487725891",
@@ -1572,7 +1679,8 @@
     "width": 1080,
     "height": 1349,
     "color": "#484848",
-    "alt": "The last chair is finished, 2017, by Milanka Bunard"
+    "alt": "The last chair is finished, 2017, by Milanka Bunard",
+    "blurb": null
   },
   {
     "id": "w1484176194",
@@ -1586,7 +1694,8 @@
     "width": 1080,
     "height": 1080,
     "color": "#383838",
-    "alt": "Self portrait, 2017, by Milanka Bunard"
+    "alt": "Self portrait, 2017, by Milanka Bunard",
+    "blurb": null
   },
   {
     "id": "w1479756876",
@@ -1600,7 +1709,8 @@
     "width": 1080,
     "height": 1080,
     "color": "#d8d8e8",
-    "alt": "Thank you all Shiny Happy People, 2016, by Milanka Bunard"
+    "alt": "Thank you all Shiny Happy People, 2016, by Milanka Bunard",
+    "blurb": null
   },
   {
     "id": "w1479582258",
@@ -1614,7 +1724,8 @@
     "width": 1080,
     "height": 1080,
     "color": "#d8d8d8",
-    "alt": "Eastside Culture Crawl, 2016, by Milanka Bunard"
+    "alt": "Eastside Culture Crawl, 2016, by Milanka Bunard",
+    "blurb": null
   },
   {
     "id": "w1473988623",
@@ -1628,7 +1739,8 @@
     "width": 608,
     "height": 608,
     "color": "#f85848",
-    "alt": "TBT Impatience, 2016, by Milanka Bunard"
+    "alt": "TBT Impatience, 2016, by Milanka Bunard",
+    "blurb": null
   },
   {
     "id": "w1472589641",
@@ -1642,7 +1754,8 @@
     "width": 1080,
     "height": 1080,
     "color": "#989898",
-    "alt": "Demontage des oeuvre de M.B., 2016, by Milanka Bunard"
+    "alt": "Demontage des oeuvre de M.B., 2016, by Milanka Bunard",
+    "blurb": null
   },
   {
     "id": "w1472589854",
@@ -1656,7 +1769,8 @@
     "width": 1080,
     "height": 1080,
     "color": "#787878",
-    "alt": "Demontage des oeuvre de M.B 2, 2016, by Milanka Bunard"
+    "alt": "Demontage des oeuvre de M.B 2, 2016, by Milanka Bunard",
+    "blurb": null
   },
   {
     "id": "w1471396508",
@@ -1670,7 +1784,8 @@
     "width": 612,
     "height": 612,
     "color": "#b86878",
-    "alt": "Saturation 4, 2016, by Milanka Bunard"
+    "alt": "Saturation 4, 2016, by Milanka Bunard",
+    "blurb": null
   },
   {
     "id": "w1471307091",
@@ -1684,7 +1799,8 @@
     "width": 612,
     "height": 612,
     "color": "#c8c8c8",
-    "alt": "Saturation 3, 2016, by Milanka Bunard"
+    "alt": "Saturation 3, 2016, by Milanka Bunard",
+    "blurb": null
   },
   {
     "id": "w1471287549",
@@ -1698,7 +1814,8 @@
     "width": 612,
     "height": 612,
     "color": "#c8c8b8",
-    "alt": "Saturation 2, 2016, by Milanka Bunard"
+    "alt": "Saturation 2, 2016, by Milanka Bunard",
+    "blurb": null
   },
   {
     "id": "w1470943558",
@@ -1712,7 +1829,8 @@
     "width": 1080,
     "height": 1080,
     "color": "#d8d8c8",
-    "alt": "Saturation, 2016, by Milanka Bunard"
+    "alt": "Saturation, 2016, by Milanka Bunard",
+    "blurb": null
   },
   {
     "id": "w1434224153",
@@ -1726,6 +1844,7 @@
     "width": 640,
     "height": 640,
     "color": "#b8c8d8",
-    "alt": "The End, 2015, by Milanka Bunard"
+    "alt": "The End, 2015, by Milanka Bunard",
+    "blurb": null
   }
 ]

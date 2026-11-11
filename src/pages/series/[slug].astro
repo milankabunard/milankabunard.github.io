@@ -1,0 +1,30 @@
+---
+import Thread from '../../layouts/Thread.astro';
+import Surface from '../../components/Surface.astro';
+import { allSeries, full } from '../../lib/works.js';
+import { artist } from '../../data/site.js';
+
+export function getStaticPaths() {
+  return allSeries().map((s) => ({ params: { slug: s.slug }, props: { series: s } }));
+}
+const { series } = Astro.props;
+const count = `${series.works.length} ${series.works.length === 1 ? 'work' : 'works'}`;
+---
+<Thread title={series.name} description={`${series.name}: ${count} by ${artist.name}.`} image={full(series.works[0])}>
+  <main>
+    <header class="opening">
+      <p class="kicker">series</p>
+      <h1>{series.name}</h1>
+      <p class="count">{count}</p>
+    </header>
+    <Surface works={series.works} />
+  </main>
+</Thread>
+
+<style>
+  main { padding: 96px var(--gutter) 160px; }
+  .opening { max-width: 640px; margin: 6vh auto 8vh; text-align: center; }
+  .kicker { font-size: 12px; color: var(--thread); margin: 0 0 8px; }
+  h1 { font: 300 italic clamp(30px, 4.4vw, 48px)/1.2 var(--serif); margin: 0 0 12px; }
+  .count { color: var(--muted); font-size: 12px; margin: 0; }
+</style>

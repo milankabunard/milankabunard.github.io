@@ -1,5 +1,5 @@
 // Applies src/data/catalogue.csv to the site: only works listed there are kept,
-// and their title, medium and dimensions come from it. Image files for works
+// and their title, medium, dimensions and blurb come from it. Image files for works
 // no longer listed are deleted from public/artwork/.
 import fs from 'node:fs/promises';
 
@@ -40,6 +40,7 @@ const kept = catalogue.map((row) => {
   work.title = row.title || 'Untitled';
   work.medium = row.medium ? capitalise(row.medium) : null;
   work.dimensions = row.dimensions || null;
+  work.blurb = row.blurb || null;
   work.alt = `${work.title}, ${work.year}, by Milanka Bunard`;
   return work;
 });
