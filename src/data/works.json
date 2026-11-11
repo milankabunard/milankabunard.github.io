@@ -32,22 +32,6 @@
     "blurb": null
   },
   {
-    "id": "p1794259837",
-    "title": "Unraveling number 1",
-    "medium": "Needlepoint on paper",
-    "dimensions": null,
-    "availability": null,
-    "year": 2026,
-    "date": "2026-11-09",
-    "alt": "Unraveling number 1, 2026, by Milanka Bunard",
-    "width": 1585,
-    "height": 2400,
-    "color": "#c8c8c8",
-    "source": "paintings/IMG_1203.heic",
-    "category": "painting",
-    "blurb": null
-  },
-  {
     "id": "p1778348854",
     "title": "Atelier",
     "medium": "Mixed media",
@@ -380,7 +364,7 @@
     "color": "#383858",
     "alt": "Mood indigo number 10, 2024, by Milanka Bunard",
     "category": "painting",
-    "blurb": "The blue colour offers endless variations.\nContinuing with an exploration of textures and shapes."
+    "blurb": "The blue colour offers endless variations.\r\nContinuing with an exploration of textures and shapes."
   },
   {
     "id": "w1707587132",
@@ -396,7 +380,7 @@
     "color": "#282858",
     "alt": "Mood indigo number 9, 2024, by Milanka Bunard",
     "category": "painting",
-    "blurb": "The blue colour offers endless variations.\nContinuing with an exploration of textures and shapes."
+    "blurb": "The blue colour offers endless variations.\r\nContinuing with an exploration of textures and shapes."
   },
   {
     "id": "w1707497631",
@@ -412,7 +396,7 @@
     "color": "#184868",
     "alt": "Mood indigo number 8, 2024, by Milanka Bunard",
     "category": "painting",
-    "blurb": "The blue colour offers endless variations.\nContinuing with an exploration of textures and shapes."
+    "blurb": "The blue colour offers endless variations.\r\nContinuing with an exploration of textures and shapes."
   },
   {
     "id": "w1707417446",
@@ -428,7 +412,7 @@
     "color": "#4878b8",
     "alt": "Mood indigo number 7, 2024, by Milanka Bunard",
     "category": "painting",
-    "blurb": "The blue colour offers endless variations.\nContinuing with an exploration of textures and shapes."
+    "blurb": "The blue colour offers endless variations.\r\nContinuing with an exploration of textures and shapes."
   },
   {
     "id": "p1706647363",
@@ -523,7 +507,7 @@
     "color": "#989898",
     "alt": "Sunset in the morning number 3, 2023, by Milanka Bunard",
     "category": "painting",
-    "blurb": "Picking up from where I left off.\nSame but different.\n\n“I do not seek. I find “\nPicasso"
+    "blurb": "Picking up from where I left off.\r\nSame but different.\r\n\r\n“I do not seek. I find “\r\nPicasso"
   },
   {
     "id": "w1689352415bb",
@@ -661,7 +645,7 @@
     "color": "#385868",
     "source": "paintings/IMG_6510.heic",
     "category": "painting",
-    "blurb": "The journey through the magical world of abstract expressionism continues.\n\n\"Painting isn't an aesthetic operation, it's a form of magic designed as a mediator between this strange hostile world and us.\" Picasso"
+    "blurb": "The journey through the magical world of abstract expressionism continues.\r\n\r\n\"Painting isn't an aesthetic operation, it's a form of magic designed as a mediator between this strange hostile world and us.\" Picasso"
   },
   {
     "id": "w1675445463",
