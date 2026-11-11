@@ -2,6 +2,9 @@
 import { artist } from '../data/site.js';
 import { allSeries } from '../lib/works.js';
 const series = allSeries();
+// Google Analytics runs only in the published build, not in `npm run dev`.
+const GA_ID = 'G-TRVB2DVW24';
+const analytics = import.meta.env.PROD;
 const { title, description = artist.tagline, image } = Astro.props;
 const fullTitle = title ? `${title} · ${artist.name}` : artist.name;
 ---
@@ -20,6 +23,17 @@ const fullTitle = title ? `${title} · ${artist.name}` : artist.name;
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Serif:ital,wght@0,300;1,300&display=swap" rel="stylesheet" />
+  {analytics && (
+    <>
+      <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}></script>
+      <script is:inline define:vars={{ GA_ID }}>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', GA_ID);
+      </script>
+    </>
+  )}
   <slot name="head" />
 </head>
 <body>
